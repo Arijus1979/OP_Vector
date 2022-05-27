@@ -215,3 +215,16 @@ cout << "MyVector: " << p2 << endl;
 std::vector: 46
 MyVector: 27
 ```
+
+## Spartos analizė
+`std::vector 100 000 duomenų analizės rezultatai`
+
+![image](https://user-images.githubusercontent.com/43725384/170778509-e2fa66f0-7878-4bc8-bf66-59b5d7d53c2d.png)
+
+
+`MyVector 100 000 duomenų analizės rezultatai`
+
+![image](https://user-images.githubusercontent.com/43725384/170778792-0eed94cb-57fb-4930-a791-abf9ee8597ca.png)
+
+
+
