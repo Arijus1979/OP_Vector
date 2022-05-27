@@ -187,3 +187,31 @@ test5.print();
 Pradiniai elementai: 1 2 3
 Elementai po pop_back: 1 2
 ```
+
+## Atminties perskirstymas
+`Testavimo kodas`
+```
+unsigned int sz = 100000000;
+int p1 = 0, p2 = 0;
+
+vector<int> v1;
+for (int i = 1; i <= sz; ++i) {
+  v1.push_back(i);
+  if (v1.size() == v1.capacity())
+    p1++;
+}
+
+MyVector<int> v2;
+for (int i = 1; i <= sz; ++i) {
+  v2.push_back(i);
+  if (v2.size() == v2.getcapacity())
+    p2++;
+}
+cout << "std::vector: " << p1 << endl;
+cout << "MyVector: " << p2 << endl;
+```
+`Rezultatas:`
+```
+std::vector: 46
+MyVector: 27
+```
